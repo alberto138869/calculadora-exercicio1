@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Calculadora Científica</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="container">
+      <section class="card">
+        <h1>Calculadora Científica</h1>
+        <p>Suporta operações básicas, potências, raiz, funções trigonométricas (radianos), ln, log (base 10) e exponencial.</p>
+        <div class="calculator">
+          <input id="calcDisplay" class="calc-display" type="text" placeholder="0" readonly />
+          <div class="calc-buttons">
+            <button class="calc-button" data-value="7">7</button>
+            <button class="calc-button" data-value="8">8</button>
+            <button class="calc-button" data-value="9">9</button>
+            <button class="calc-button" data-value="/">÷</button>
+            <button class="calc-button" data-value="sin(">sin</button>
+
+            <button class="calc-button" data-value="4">4</button>
+            <button class="calc-button" data-value="5">5</button>
+            <button class="calc-button" data-value="6">6</button>
+            <button class="calc-button" data-value="*">×</button>
+            <button class="calc-button" data-value="cos(">cos</button>
+
+            <button class="calc-button" data-value="1">1</button>
+            <button class="calc-button" data-value="2">2</button>
+            <button class="calc-button" data-value="3">3</button>
+            <button class="calc-button" data-value="-">-</button>
+            <button class="calc-button" data-value="tan(">tan</button>
+
+            <button class="calc-button" data-value="0">0</button>
+            <button class="calc-button" data-value=".">.</button>
+            <button class="calc-button" data-value="(">(</button>
+            <button class="calc-button" data-value=")">)</button>
+            <button class="calc-button" data-value="+">+</button>
+
+            <button class="calc-button" data-value="^">^</button>
+            <button class="calc-button" data-value="sqrt(">√</button>
+            <button class="calc-button" data-value="ln(">ln</button>
+            <button class="calc-button" data-value="log(">log</button>
+            <button class="calc-button" data-value="exp(">exp</button>
+          </div>
+
+          <div class="calc-controls">
+            <button id="calcClear">C</button>
+            <button id="calcDel">⌫</button>
+            <button id="calcEquals">=</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
