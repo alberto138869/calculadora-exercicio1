@@ -9,7 +9,19 @@ body{margin:0;font-family:Inter,Segoe UI,Arial;background:linear-gradient(180deg
 .calculator{display:grid;gap:0.6rem}
 .calc-display{width:100%;padding:0.75rem 1rem;font-size:1.1rem;text-align:right;border-radius:0.5rem;border:1px solid rgba(15,23,42,0.06);background:#fff}
 .calc-buttons{display:grid;grid-template-columns:repeat(5,1fr);gap:0.45rem;margin-top:0.5rem}
+/* Botões padrão */
 .calc-buttons .calc-button{padding:0.55rem;border-radius:0.5rem;background:#f3f4f6;border:1px solid rgba(15,23,42,0.06);cursor:pointer;font-size:0.98rem}
+/* Botões numéricos em verde claro */
+button[data-value="0"],button[data-value="1"],button[data-value="2"],button[data-value="3"],button[data-value="4"],button[data-value="5"],button[data-value="6"],button[data-value="7"],button[data-value="8"],button[data-value="9"]{
+  background:#d1fae5; /* verde claro */
+  color:#064e3b; /* verde escuro para contraste */
+  border-color:rgba(6,78,59,0.12);
+}
+/* Hover para botões numéricos */
+button[data-value="0"]:hover,button[data-value="1"]:hover,button[data-value="2"]:hover,button[data-value="3"]:hover,button[data-value="4"]:hover,button[data-value="5"]:hover,button[data-value="6"]:hover,button[data-value="7"]:hover,button[data-value="8"]:hover,button[data-value="9"]:hover{
+  background:#10b981; color:#fff;
+}
+
 .calc-buttons .calc-button:hover{background:var(--brand);color:#fff}
 .calc-controls{display:flex;gap:0.5rem;margin-top:0.5rem}
 .calc-controls button{flex:1;padding:0.6rem;border-radius:0.45rem;background:var(--brand);color:#fff;border:none;cursor:pointer}
